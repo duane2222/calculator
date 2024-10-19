@@ -21,9 +21,9 @@ jobs:
       - name: Clean
         run: mvn -ntp clean
       - name: Build
-        run: mvn -ntp compile
+        run: mvn -ntp compile -X
       - name: Short tests
-        run: mvn -ntp test -Dtest='CalculatorTest'
+        run: mvn -ntp test -Dtest='CalculatorTest' -X
       - name: Long tests
-        run: mvn -ntp test -Dtest='CalculatorTestThorough'
+        run: mvn -ntp test -Dtest='CalculatorTestThorough' -X
                      
